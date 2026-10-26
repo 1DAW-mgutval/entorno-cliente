@@ -4,8 +4,8 @@
 {
     function altoBajo(array) {
         if (array instanceof Array) {
-            array.sort((a,b) => a-b);
-            return [array[0], array[array.length-1]];
+            let copia = [...array].sort((a,b) => a-b);
+            return [copia[0], copia[copia.length-1]];
         }
         return null;
     }
